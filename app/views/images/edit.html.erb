@@ -1,0 +1,16 @@
+<p>Edit your image below</p>
+
+<%= form_for @image do |f| %>
+
+    <p><%= f.label "title", "TITLE" %></p>
+    <%= f.text_field "title" %>
+
+    <p><%= f.label "url", "URL" %></p>
+    <%= f.text_field "url" %>
+
+    <%= f.submit "Update Info" %>
+
+<% end %>
+
+
+<p><%= image_tag(@image.url) %></p>

@@ -1,0 +1,13 @@
+<p>Add your image below:</p>
+
+<%= form_for @image do |f| %>
+
+    <p><%= f.label "title" %></p>
+    <p><%= f.text_field "title" %></p>
+
+    <p><%= f.label "url" %></p>
+    <p><%= f.text_field "url" %></p>
+
+    <p><%= f.submit "Save" %></p>
+
+<% end %>
